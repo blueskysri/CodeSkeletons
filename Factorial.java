@@ -47,26 +47,17 @@ class Factorial
 		}
 	}
 
-void Zeros(long number){
-long result=0;
-for(long i=5;i<=number;i=i*5){
-result+=number/i;
-//System.out.println("i is: "+i);
-}
-System.out.println(result);
-
-}
 
 	public static void main (String[] args)
 	{
-		Factorial Factorial1=new Factorial();
-		long No_TestCases=Long.parseLong(Factorial1.getLine());
+		Factorial Instance=new Factorial();
+		long No_TestCases=Long.parseLong(Instance.getLine());
 		while(No_TestCases >0){
-		
-		Factorial1.Zeros(Long.parseLong(Factorial1.getLine()));
+		//your own implementation after getting each line here 
+		//Factorial1.Zeros(Long.parseLong(Instance.getLine()));
 		No_TestCases--;
 		}
 		//System.out.println(Factorial1.getLine());
-		Factorial1.close();	
+		Instance.close();	
 	}
 }
